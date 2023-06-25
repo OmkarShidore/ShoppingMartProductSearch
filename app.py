@@ -27,13 +27,13 @@ def owner():
 
 @app.route("/square", methods=['GET'])
 def square():
-    time.sleep(10)
+    #time.sleep(10)
     num = float(request.args.get("num"))
     return json.dumps(num*num)
 
 @app.route("/power", methods=["GET"])
 def power():
-    time.sleep(10)
+    #time.sleep(10)
     num = float(request.args.get("num"))
     power_to = float(request.args.get("power_to"))
     ans = num**power_to
