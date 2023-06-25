@@ -1,5 +1,5 @@
 from flask import Flask, request
-from waitress import serve
+#from waitress import serve
 
 import json
 from markupsafe import escape
@@ -41,6 +41,6 @@ def power():
 
 if __name__ == '__main__':
     print(f"##########################Starting Flask App##########################")
-    #app.run(host='0.0.0.0', port=8080)
-    serve(app, host="0.0.0.0", port=8080)
+    app.run(host='0.0.0.0', port=8080)
+    #serve(app, host="0.0.0.0", port=8080)
     #app.run(port=5000, debug=True)
